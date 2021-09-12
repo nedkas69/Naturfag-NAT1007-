@@ -1,0 +1,17 @@
+mor_1=input("Skriv inn mors første gen: ")
+print()
+mor_2=input("Skriv inn mors andre gen:")
+print()
+far_1=input("Skriv inn fars første gen: ")
+print()
+far_2=input("Skriv inn fars andre gen: ")
+print()
+print(f"Din mors genotype er {mor_1}{mor_2}.")
+print()
+print(f"Din fars genotype er {far_1}{far_2}.")
+kombinasjon_1=mor_1+far_1
+kombinasjon_2=mor_1+far_2
+kombinasjon_3=mor_2+far_1
+kombinasjon_4=mor_2+far_2
+print()
+print(f"De mulige genotypene til avkommet er: {kombinasjon_1}, {kombinasjon_2}, {kombinasjon_3}, {kombinasjon_4}.")
