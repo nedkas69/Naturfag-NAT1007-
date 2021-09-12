@@ -1,0 +1,20 @@
+#Program som leser en DNA sekvens og lager
+#en komplementær mRNA sekvens
+
+DNA_sekvens=input("Skriv inn en DNA sekvens: ")
+
+#Ordbok
+Komp_base={"A":"U","T":"A","C":"G","G":"C"}
+
+#Spare mRNAsekvensen
+mRNA_sekvens=""
+
+#Løkke som leser hele DNA sekvensen og skriver 
+#mRNA sekvensen
+for i in range(len(DNA_sekvens)):
+  base=DNA_sekvens[i]
+  mRNA_sekvens=mRNA_sekvens+Komp_base[base]
+
+#Skrive ut mRNA sekvensen
+print(f"Den tilsvarende mRNA sekvensen er {mRNA_sekvens}.")
+
