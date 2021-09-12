@@ -1,0 +1,6 @@
+halveringstid=float(input("Skriv inn halveringstiden: "))
+print()
+tidgått=float(input("Skriv inn hvor lang tid det har gått: "))
+prosent_igjen=round(0.5**(tidgått/halveringstid)*100,2)
+print()
+print(f"Det er {prosent_igjen}% som enda ikke har avgitt radioaktiv stråling.")
