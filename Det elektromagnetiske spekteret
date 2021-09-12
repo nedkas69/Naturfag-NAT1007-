@@ -1,0 +1,22 @@
+bølgelengde=float(input("Skriv inn en bølgelengde i nm: "))
+print()
+if bølgelengde > 1000000:
+  print("Dette tilsvarer radiobølger. Eksempel på anvendelse: Mobiltelefon, mikrobølgovn, radio- og TV signaler.")
+elif bølgelengde >800:
+  print("Dette tilsvarer infrarød stråling (varmestråling). Eksempel på anvendelse: Se i mørket, undersøke varmelekkasjer i hus, panelovn.")
+elif bølgelengde >400:
+  print("Dette tilsvarer synlig lys. Eksempel på anvendelse: Øynene våre registerer dette.")
+elif bølgelengde >280:
+  print("Dette tilsvarer ultrafiolett stråling A eller B. Eksempel på anvendelse: Merking av pengesedler. Blacklight. Bruker huden, kan gi hudkreft.")
+elif bølgelengde >10:
+  print("Dette tilsvarer ultrafiolett stråling C. Eksempel på anvendelse: Luft- og vannrensing. Sterilisering av instrumenter. ")
+elif bølgelengde > 0.001:
+  print("Dette tilsvarer røntgenstråling. Eksempel på anvendelse: Røntgenbilder.")
+elif bølgelengde <0.001:
+  print("Dette tilsvarer gammastråling. Eksempel på anvendelse: Drepe kreftceller.")
+if bølgelengde <=280:
+  print()
+  print("Dette er ioniserende stråling.")
+elif bølgelengde >280:
+  print()
+  print("Dette er ikke-ioniserende stråling.")
